@@ -1,0 +1,11 @@
+google-adk
+google-genai
+qdrant-client
+pymupdf4llm
+llama-index
+llama-index-vector-stores-qdrant
+llama-index-embeddings-google-genai
+python-dotenv
+fastapi
+uvicorn
+pydantic-settings
