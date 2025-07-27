@@ -1,12 +1,4 @@
-from google.adk.agents import Agent
-# from google.adk.tools import google_search
-from main_agent.tools.rag_orchestrator import retrieve_from_collection
-from main_agent.prompts.instructions import MAIN_AGENT_INSTRUCTIONS
+from main_agent.orchestrators.main_orchestrator import inspection_pipeline_agent
 
-root_agent = Agent(
-    name="main_agent",
-    description="A main agent that is the inspector working for both the school and the inspection team",
-    model="gemini-2.5-flash",
-    tools=[retrieve_from_collection],
-    instruction=MAIN_AGENT_INSTRUCTIONS
-)
+# For ADK tools compatibility and discovery, the root agent must be named `root_agent`
+root_agent = inspection_pipeline_agent

@@ -11,6 +11,10 @@ class Settings(BaseSettings):
     QDRANT_COLLECTION_NAME: str = "uae-inspection-framework"
     PDF_DATA_DIR: str = "data"
 
+    # Model Config
+    TEXT_MODEL: str = "gemini-2.5-flash"
+    VISION_MODEL: str = "gemini-2.5-flash"
+
 class Config:
     env_file = ".env"
     extra = "ignore"
