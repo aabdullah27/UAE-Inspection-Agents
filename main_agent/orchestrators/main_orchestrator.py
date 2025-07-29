@@ -6,13 +6,7 @@ from main_agent.agents.analysis_agents import (
     text_analysis_agent
 )
 from main_agent.agents.synthesis_agent import synthesis_agent
-from main_agent.agents.evaluation_agent import evaluation_agent
 from main_agent.agents.report_writer_agent import report_writer_agent
-from main_agent.agents.refinement_agents import (
-    report_critique_agent,
-    text_refinement_agent
-)
-from main_agent.agents.pdf_agent import pdf_generator_agent
 
 # Parallel analysis orchestrator remains the same
 analysis_orchestrator = ParallelAgent(
@@ -31,11 +25,7 @@ inspection_pipeline_agent = SequentialAgent(
     sub_agents=[
         analysis_orchestrator,
         synthesis_agent,
-        evaluation_agent,
-        report_writer_agent,
-        report_critique_agent,
-        text_refinement_agent,
-        pdf_generator_agent
+        report_writer_agent
     ],
     description="Orchestrates the end-to-end school inspection and report generation process."
 )

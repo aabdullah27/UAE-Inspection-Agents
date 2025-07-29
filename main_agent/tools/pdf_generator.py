@@ -76,7 +76,6 @@ def create_pdf_report(report_markdown_content: str) -> Dict[str, str]:
             </style>
         </head>
         <body>
-            <h1>School Inspection Report</h1>
             {html_content}
         </body>
         </html>
