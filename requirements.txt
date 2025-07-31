@@ -2,6 +2,7 @@ google-adk
 google-genai
 xhtml2pdf
 Markdown
+streamlit
 qdrant-client
 pymupdf4llm
 llama-index
