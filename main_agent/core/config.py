@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     QDRANT_URL: Optional[str] = None
     QDRANT_API_KEY: Optional[str] = None
     QDRANT_COLLECTION_NAME: str = "uae-inspection-framework"
-    PDF_DATA_DIR: str = "data"
+    PDF_DATA_DIR: str = "output_reports"
 
     # Model Config
     TEXT_MODEL: str = "gemini-2.5-flash"
